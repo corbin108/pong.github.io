@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Pong </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+		<script>
+		function start(){
+		sjs.open();
+		var gameover_text = new sjs.Text("Sorry My Friend, You Lose!",28,"red");
+		var restartBtn = new sjs.Button("Restart", function(){
+			window.location = "pong.html";
+		});
+		var menuBtn = new sjs.Button("Menu", function(){
+				window.location = "index.html";
+			});
+		menuBtn.center().offset(0,-50);
+		restartBtn.center();
+		gameover_text.centerH();
+
+		} //end start
+		</script>
+	</head>
+	<body onload="start()">
+		<h1> Pong </h1>
+
+		<div id="target" style="margin:auto;background:grey;"></div>
+	</body>
+	</html>

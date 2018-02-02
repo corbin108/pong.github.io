@@ -1,0 +1,25 @@
+
+<html>
+	<head>
+		<title> Pong </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+		<script>
+			function start(){
+			sjs.open();
+			var menu_text = new sjs.Text("PONG ",28,"blue");
+			menu_text.centerH();
+			var startBtn = new sjs.Button("PLAY", function(){
+				window.location = "pong.html";
+			});
+			startBtn.center();
+			var info_text = new sjs.Text("made by corbin hicken", 14, "blue");
+			info_text.bottom().centerH();
+			} //end start
+		</script>
+	</head>
+	<body onload="start()">
+		<h1> Pong </h1>
+
+		<div id="target" style="margin:auto;background: yellow;"></div>
+		</body>
+</html>
